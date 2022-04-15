@@ -2,7 +2,7 @@
 
 <html lang="pl">
 <head>
-<title>Formularze</title>
+<title>Formularze HTML</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--że tu? viewport odpowiada za zoomowanie na ekranach dotykowych, chociaż znając życie ctrl + --> 
@@ -15,19 +15,105 @@
             <a href="index.html"> Strona główna </a>
         </nav>
     </header>-->
-<div id="kontener">
-    <div id="baner"><h2> Przykładowy formularz HTMLL</h2></div>
+    <div id="kontener">
+    <div id="baner"><h2> Szybki kurs HTML</h2></div>
     <div id="menu">
         <a href="index.html">Podstawowe znaczniki HTML</a>
         <a href="tabele.html">Tworzenie tabel</a>
         <a href="formularze.html">Budowa formularzy</a>
     </div>
-
+<div id="baner3"><h3> Podstawowe znaczniki</h3></div>
 <div id="tresc">
+     <ul>
+  <li>&lt;html&gt; - korzeń dokumenty</li>
+  <li>&lt;head&gt; - nagłówek strony z informacjami dla przeglądarek</li>
+  <li>&lt;body&gt; - właściwa treść dokumentu widoczna w oknie przeglądarki</li>
+  <li>&lt;div&gt; - element blokowy</li>
+  <li>&lt;p&gt; - akapit</li>
+  <li>&lt;ol&gt;,&lt;ul&gt;,&lt;li&gt; - elementy listy wypunktowanej lub numerowanej</li>
+  <li>&lt;img&gt; - obrazek</li>
+  <li>&lt;a&gt; - hiperłącze</li>
+     
+</ul> 
+</div>
+    
+    
+    
+    
+
+    <div id="baner2"><h3> Przykładowy formularz HTML:</h3> </div>
+
+<div id="formularz">
+
+<form action="mailto:beatap@cs.pollub.pl" method="post">
 
     
-    <p><a href="https://validator.w3.org/" target="_blank">HTML walidator <img src="src/w3c.png" alt=""/></a></p>   <!-- Pozwoliłem sobie dodać otwieranie w nowej karcie -->
+<table>
+    <tr>
+        <th>Nazwisko:</th>
+        <th><input type="text" name="nazwisko"/> <br /></th>
+     </tr> 
+    <tr>
+        <th>Wiek:</th>
+        <th><input type="text" name="wiek"/> <br /></th>
+     </tr>   
+    <tr>
+        <th>Państwo:</th>
+        <th>
+
+  <select id="panstwa" name="panstwa">
+    <option value="Polska">Polska</option>
+    <option value="Ukraina">Ukraina</option>
+    <option value="Niemcy">Niemcy</option>
+    <option value="WielkaBrytania">Wielka Brytania</option>
+    <option value="Inny">Inny</option>
+  </select>
+<br></th>
+     </tr>   
+    <tr>
+        <th>Adres e-mail:</th>
+        <th><input type="text" name="email"/> <br /></th>
+     </tr>              
+        
+</table>
+ 
+
+<!--<form action="/action_page.php">-->
+<!--
+<label for="panstwa">Państwo :</label>
+  <select id="panstwa" name="panstwa">
+    <option value="Polska">Polska</option>
+    <option value="Ukraina">Ukraina</option>
+    <option value="Niemcy">Niemcy</option>
+    <option value="WielkaBrytania">Wielka Brytania</option>
+    <option value="Inny">Inny</option>
+  </select>
+<br>-->
+<!--  <input type="submit">-->
+
+
+<!--Adres e-mail: <input type="password" name="pass"/> <br /><br />-->
     
+<p>Zamawiam tutorial z języka:</p>
+<input type="checkbox" name="PHP" value="PHP" /> Język PHP 
+<input type="checkbox" name="C" value="C" /> Język C/C++
+<input type="checkbox" name="Java" value="J" /> Język Java
+
+
+<p>Sposób zapłaty:</p>
+
+<input type="radio" id="ec" name="payment_method" value="eurocard">
+  <label for="ec">eurocard</label> 
+  <input type="radio" id="visa" name="payment_method" value="visa">
+  <label for="visa">visa</label> 
+  <input type="radio" id="przelew_bankowy" name="payment_method" value="przelew_bankowy">
+  <label for="przelew_bankowy">przelew bankowy</label>
+
+<br>  
+<input type="submit" value="Wyślij" />
+<input type="reset" value="Anuluj" />
+  
+</form>
 </div>
     
 <div id="stopka"> &copy;BP </div>
