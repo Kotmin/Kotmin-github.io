@@ -9,8 +9,10 @@
 <title>Tabele</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="CSS/style_1.css" rel="stylesheet" type="text/css"/>
 <!--że tu? viewport odpowiada za zoomowanie na ekranach dotykowych, chociaż znając życie ctrl + --> 
 <!--<link href="CSS/style.css" rel="stylesheet" type="text/css"/>-->
+<link href="CSS/tabele.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
@@ -77,7 +79,9 @@
 
 <table>
     <caption>Popularność języków programowania</caption>
-  <tr>
+  
+    <thead>
+      <tr>
     <th rowspan = "2">Język programowania</th>
     <th colspan = "2">Pozycja</th>
 
@@ -85,14 +89,17 @@
   <tr>
     <th>Luty 2020</th>
     <th>2015</th>
-  </tr>
+  </tr>   
+        
+    </thead>
+   
   <tr>
     <td>Java</td>
     <td>1</td>
     <td>2</td>
   </tr>
-    <tr>
-    <td>C</td>
+    <tr class="parzysty">
+    <td >C</td>
     <td>2</td>
     <td>1</td>
   </tr>
@@ -101,8 +108,8 @@
     <td>3</td>
     <td>7</td>
   </tr>
-      <tr>
-    <td>C++</td>
+      <tr class="parzysty">
+    <td >C++</td>
     <td>4</td>
     <td>4</td>
   </tr>
@@ -112,9 +119,11 @@
     <td>7</td>
   </tr>
   
-  <tr>
-      <td colspan="3"> Na podstawie:<br><a href="https://www.tiobe.com/tiobe-index/" > https://www.tiobe.com/tiobe-index/ 
+  <tr> <tfoot>
+        <td colspan="3"> Na podstawie:<br><a href="https://www.tiobe.com/tiobe-index/" > https://www.tiobe.com/tiobe-index/ 
              </a>
+  </tfoot>
+
        </td>    
   </tr>
   
