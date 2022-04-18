@@ -35,8 +35,8 @@ body {
 	line-height: 1;
 }
 ol, ul {
-/*	list-style: none;*/
-        list-style-type: disc;
+	list-style: none;
+/*        list-style-type: disc;*/
         padding-left: 4%;
 }
 blockquote, q {
@@ -90,6 +90,7 @@ background:#ffffff;
 border-bottom:2px solid #0000a0;
 }
 
+
 #menu li {
 float:left;
 margin:0;
@@ -99,7 +100,8 @@ padding-right:3px;
 font-family:"Lucida
 Grande", sans-serif;
 font-size:85%;
-list-style-type: disc;
+/*list-style-type: disc;*/
+list-style: none;
 text-align: center;
 
 }
@@ -139,6 +141,9 @@ background: lightblue;
 float:left;
 width:75%;
 padding:1%;
+}
+#tresc li{
+    list-style-type:disc;
 }
 #pasek {
 float:right;
