@@ -1,0 +1,181 @@
+ <!DOCTYPE html>
+
+ 
+ 
+<html lang="pl">
+    
+
+<head>
+<title>Tabele</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="CSS/style_1.css" rel="stylesheet" type="text/css"/>
+<!--że tu? viewport odpowiada za zoomowanie na ekranach dotykowych, chociaż znając życie ctrl + --> 
+<!--<link href="CSS/style.css" rel="stylesheet" type="text/css"/>-->
+<!--<link href="CSS/tabele.css" rel="stylesheet" type="text/css"/>-->
+<link href="CSS/style_backup_css.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="kontener">
+    <div id="baner"><h2> Szybki kurs HTML</h2></div>
+    <div id="menu">
+        <ul id="nav">
+            <li><a href="index.html">Podstawy</a> </li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="">Formularze</a>
+            <ul>
+            <li><a href="formularze.html" >Pola formularza</a></li>
+            <li><a href="obliczenia.html" >Obliczenia w formularzu</a></li>
+            </ul>
+            </li>
+            <li><a href="" title="">Galeria</a></li>
+            </ul>
+        
+        
+        
+        
+    </div>
+<!--<div id="baner3"></div>-->
+<div id="tresc">
+    <h3> Podstawowe znaczniki  HTML to</h3>
+     <ul>
+  <li>&lt;html&gt; - korzeń dokumenty</li>
+  <li>&lt;head&gt; - nagłówek strony z informacjami dla przeglądarek</li>
+  <li>&lt;body&gt; - właściwa treść dokumentu widoczna w oknie przeglądarki</li>
+  <li>&lt;div&gt; - element blokowy</li>
+  <li>&lt;p&gt; - akapit</li>
+  <li>&lt;ol&gt;,&lt;ul&gt;,&lt;li&gt; - elementy listy wypunktowanej lub numerowanej</li>
+  <li>&lt;img&gt; - obrazek</li>
+  <li>&lt;a&gt; - hiperłącze</li>
+     
+</ul> 
+</div>
+
+<div id="pasek">
+<!-- W pasku zawarty jest kolejny blok klasy box:-->
+<div class="box">
+<h3>Walidatory:</h3>
+<ul>
+<li> <a href="http://validator.w3.org/">HTML </a></li>
+<li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+</ul>
+</div>
+<!-- Kolejny blok klasy box:-->
+<div class="box">
+<h3>Kursy:</h3>
+<ul>
+<li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+<li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+<li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+<li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+</ul>
+
+
+</div>
+</div>
+    
+    
+    
+    
+
+    <div id="baner2"><h3> Przykładowa tabela HTML:</h3> </div>
+
+
+<div id="tabela">
+ 
+<!--            <table>
+                <caption>Popularność języków programowania</caption>
+                <tr class="npar">
+                    <th>&nbsp</th>
+                    <th colspan ="2">Język programowania</th>
+                    <th>Luty 2020</td>
+                    <td>2015</td>
+                    <th>Pozycja</th>
+                </tr>
+                <tr class="par">
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr class="npar">
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+                <tfoot>
+                <a href="index.html">Na podstawie</a>
+
+                </tfoot>
+            </table> 
+    
+    <p><a href="https://validator.w3.org/" target="_blank">HTML walidator <img src="src/w3c.png" alt=""/></a></p>    Pozwoliłem sobie dodać otwieranie w nowej karcie -->
+    
+
+<!--Tutaj będzie trzeba to przemielić na tbody t foot etc-->
+
+<table>
+    <caption>Popularność języków programowania</caption>
+  
+    <thead>
+      <tr>
+    <th rowspan = "2">Język programowania</th>
+    <th colspan = "2">Pozycja</th>
+
+  </tr>
+  <tr>
+    <th>Luty 2020</th>
+    <th>2015</th>
+  </tr>   
+        
+    </thead>
+   
+  <tr>
+    <td>Java</td>
+    <td>1</td>
+    <td>2</td>
+  </tr>
+    <tr class="parzysty">
+    <td >C</td>
+    <td>2</td>
+    <td>1</td>
+  </tr>
+    <tr>
+    <td>Python</td>
+    <td>3</td>
+    <td>7</td>
+  </tr>
+      <tr class="parzysty">
+    <td >C++</td>
+    <td>4</td>
+    <td>4</td>
+  </tr>
+   <tr>
+    <td>C#</td>
+    <td>5</td>
+    <td>7</td>
+  </tr>
+  
+  <tr> <tfoot>
+        <td colspan="3"> Na podstawie:<br><a href="https://www.tiobe.com/tiobe-index/" > https://www.tiobe.com/tiobe-index/ 
+             </a>
+  </tfoot>
+
+       </td>    
+  </tr>
+  
+
+</table>
+
+</div>
+    
+<div id="stopka"> &copy;BP </div>
+</div>
+    
+</body>
+    
+    
+    
+    
+    
+
+</html>

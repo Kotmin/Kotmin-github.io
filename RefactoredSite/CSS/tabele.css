@@ -1,0 +1,52 @@
+
+
+
+table {
+background:#ffffb3;
+border: #000040;
+margin:2%;
+text-align:center;
+width:94%;
+
+
+}
+
+/*
+WARNING WALIDATORA
+
+Using width with border can sometimes make elements larger than you expect.
+*/
+
+/*ustawienie tytułu tabeli:*/
+caption {
+font-size:150%
+}
+/*formatowanie części nagłowkowej i stopki tabeli: */
+tfoot, thead {
+background:#0000a0;
+color:#ffffff;
+font-size:120%
+}
+
+/*formatowanie pojedynczych komórek zwykłych i nagłówkowych: */
+td, th { 
+border: solid #000040; 
+}
+/*1pt*/
+/*Don't use width or height when using padding or border.*/
+/*formatowanie elementu <a> zawartego w elemencie <tfoot>: */
+tfoot a {
+color:#ffffff;
+}
+/* definicja klasy o nazwie parzysty - mozna
+ją zastosować dla dowolnego znacznika w dokumencie html
+podając atrybut class="parzysty" :*/
+.parzysty {
+background:#ffffff;
+} 
+/*
+Dostaliśmy ostrzeżenie że takie selektory mogą być wolne*/
+/*
+Element (*.parzysty) is overqualified, just use .parzysty without element name.parzysty
+
+Don't use classes or IDs with elements (a.foo or a#foo).*/
