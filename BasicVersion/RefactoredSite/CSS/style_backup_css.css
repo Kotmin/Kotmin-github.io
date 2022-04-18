@@ -1,0 +1,239 @@
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2,  h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+/*	list-style: none;*/
+        list-style-type: disc;
+        padding-left: 4%;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+/*background: #4ae;*/
+background: white;
+color:#000040;
+min-height: 100vh;
+
+}
+
+
+h1, h2{
+
+
+text-align:center;
+font-size: 10vh;
+}
+
+
+#baner
+{
+background: #000040;
+color: #8080ff;
+text-align:center; 
+font-size: 3vh;
+margin-bottom: 2vh;
+    
+}
+
+#menu {
+
+float:left;
+width:100%;
+margin:0;
+padding:0;
+background:#ffffff;
+border-bottom:2px solid #0000a0;
+}
+
+#menu li {
+float:left;
+margin:0;
+padding:0;
+list-style:none;
+padding-right:3px;
+font-family:"Lucida
+Grande", sans-serif;
+font-size:85%;
+list-style-type: disc;
+text-align: center;
+
+}
+#menu a {
+float:left;
+display:block;
+margin:0;
+padding:4px 8px;
+color:#ffffd7;
+text-decoration:none;
+border: 1px solid
+#0000c6;
+border-bottom:none;
+background:#0000a0;
+
+}
+#menu a:hover {
+background:#0000d5;
+color:#ffffff;
+text-decoration:none;
+}
+
+
+#kontener {
+    
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+
+/*Pozycjonowanie elementów na stronie */
+#tresc {
+background: lightblue;
+float:left;
+width:75%;
+padding:1%;
+}
+#pasek {
+float:right;
+width:20%;
+padding:1%;
+}
+
+#nav{
+     margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+#stopka{
+clear:both;
+width:100%;
+padding:5px 0 5px 0;
+text-align:center;
+background: #000040;
+color: #8080ff;
+font-size: 4vh;
+margin-bottom: 1vh;
+    
+}
+
+#menu2 {
+text-align: left;
+overflow: hidden;
+font-family: calibri, tahoma;
+}
+ul#menu2 li {
+border: 1px solid #d5d5d5;
+list-style-type: none;
+float: left;
+background: #98bed8;
+margin-left: 3px;
+}
+ul#menu2 li:hover {
+border: 1px solid #d5d5d5;
+list-style-type: none;
+float: left;
+background: #f0f0f0;
+margin-left: 3px;
+}
+ul#menu2 li a {
+display : block;
+padding : 4pt;
+text-decoration : none;
+}
+ul#menu2 li li a {
+width: 160px;
+}
+ul#menu2 li li:hover {
+background: white;
+}
+ul#menu2 li ul {
+overflow: hidden;
+display: none;
+}
+ul#menu2 li:hover ul {
+position: absolute;
+background: #aaa;
+padding: 0;
+display: block;
+width: 177px;
+text-align: center;
+}
+
+
+
+
+#menu ul
+{
+    list-style-type:disc;
+    
+}
+
+
+.box ul
+{
+     list-style-type:disc;
+}
+*.box { background:#0000a0;
+color:#dbffff;
+padding:5px;
+margin:5px;
+font-size:90%;
+text-align: center;
+}
+/* hiperłącza w elementach klasy box*/
+*.box a{color:#ffffb0;
+}
+h3 {
+   text-align:left; 
+}
+
+
