@@ -33,20 +33,39 @@ ol, ul,li {
 	list-style-type: disc;
         
 }
-h1, h2, #stopka {
+h1, h2,#stopka {
 background: #000040;
 color: #8080ff;
 text-align:center;
 }
 
-#menu
-{
-    background: white;
-        
+#kontener {
+background:#ffffff;
+
 }
-#tresc
-{
-    background:lightblue;
+/*pozycjonowanie elementów: */
+#menu {
+float:left;
+padding:2%;
+
+width:20%;
+
+}
+#box,#baner3 {
+background:lightblue;
+float:right;
+padding:2%;
+/*width:70%; Pewnie tu jest problem*/
+width:70%;
+
+}
+/* umieszczenie stopki poniżej elementów z float */
+#stopka{
+clear:both;
+padding:5px 0 5px 0;
+text-align:center;
+width:100%;
+
 }
 
 /*,,Selectors shouldn't refer to ids' - css validator*/
