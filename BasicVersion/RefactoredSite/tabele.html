@@ -23,7 +23,7 @@
     </header> 
     
     
-<div id="kontener">
+<section>
 <!--    <div id="baner"><h2> Szybki kurs HTML</h2></div>-->
     <div id="menu">
         <ul id="nav">
@@ -44,7 +44,7 @@
         
     </div>
 
-<div id="tresc">
+<article>
     <h3> Podstawowe znaczniki  HTML to</h3>
      <ul>
   <li>&lt;html&gt; - korzeń dokumenty</li>
@@ -57,7 +57,7 @@
   <li>&lt;a&gt; - hiperłącze</li>
      
 </ul> 
-</div>
+</article>
 
 <div id="pasek">
 <!-- W pasku zawarty jest kolejny blok klasy box:-->
@@ -86,7 +86,7 @@
     
     
 
-    <div id="baner2"><h3> Przykładowa tabela HTML:</h3> </div>
+    <div><h3> Przykładowa tabela HTML:</h3> </div>
 
 
 <div id="tabela" style="overflow-x:auto;">
@@ -109,13 +109,27 @@
   </tr>   
         
     </thead>
+    
+        <tfoot>
+      <tr>
+    <th rowspan = "2">Język programowania</th>
+    <th colspan = "2">Pozycja</th>
+
+  </tr>
+  <tr>
+    <th>Luty 2020</th>
+    <th>2015</th>
+  </tr>   
+        
+    </tfoot>
    
+    <tbody>
   <tr>
     <td>Java</td>
     <td>1</td>
     <td>2</td>
   </tr>
-    <tr class="parzysty">
+    <tr>
     <td >C</td>
     <td>2</td>
     <td>1</td>
@@ -125,7 +139,7 @@
     <td>3</td>
     <td>7</td>
   </tr>
-      <tr class="parzysty">
+      <tr>
     <td >C++</td>
     <td>4</td>
     <td>4</td>
@@ -136,13 +150,10 @@
     <td>7</td>
   </tr>
   
-  <tr> <tfoot>
-        <td colspan="3"> Na podstawie:<br><a href="https://www.tiobe.com/tiobe-index/" > https://www.tiobe.com/tiobe-index/ 
-             </a>
-  </tfoot>
 
-       </td>    
-  </tr>
+
+          
+    </tbody>
   
 
 </table>
@@ -153,7 +164,7 @@
     &copy;BP 
 </footer>
 
-</div>
+</section>
     
 </body>
     

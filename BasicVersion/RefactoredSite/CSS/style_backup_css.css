@@ -136,12 +136,13 @@ text-decoration:none;
 
 
 
-#kontener {
+section {
     
     width: 90%;
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    background: white;
 }
 .container
 {
@@ -155,19 +156,21 @@ text-decoration:none;
 
 
 /*Pozycjonowanie elementów na stronie */
-#tresc {
+article {
 background: lightblue;
 float:left;
 width:75%;
 padding:1%;
+padding-bottom: 1%;
 }
-#tresc li{
+article li{
     list-style-type:disc;
 }
 #pasek {
 float:right;
-width:20%;
+width:25%;
 padding:1%;
+padding-bottom: 5%;
 }
 
 /*
@@ -316,7 +319,8 @@ h3 {
 }
 
 
-/*Tabele*/
+/*Tabele - wydaje sie ze to juz jest poprawnie napisane- validated*/
+
 
 
 
@@ -337,7 +341,7 @@ WARNING WALIDATORA
 Using width with border can sometimes make elements larger than you expect.
 */
 
-/*ustawienie tytułu tabeli:*/
+/*ustawienie rozmiaru tytułu tabeli:*/
 caption {
 font-size:150%
 }
@@ -352,35 +356,28 @@ font-size:120%
 td, th { 
 border: solid #000040; 
 }
-/*1pt*/
-/*Don't use width or height when using padding or border.*/
-/*formatowanie elementu <a> zawartego w elemencie <tfoot>: */
+
+
 tfoot a {
 color:#ffffff;
 }
-/* definicja klasy o nazwie parzysty - mozna
-ją zastosować dla dowolnego znacznika w dokumencie html
-podając atrybut class="parzysty" :*/
-.parzysty {
-background:#ffffff;
-} 
-/*
-Dostaliśmy ostrzeżenie że takie selektory mogą być wolne*/
-/*
-Element (*.parzysty) is overqualified, just use .parzysty without element name.parzysty
 
-Don't use classes or IDs with elements (a.foo or a#foo).*/
+tbody tr:nth-child(even){
+    background:#ffffff;
+}
+
+/*Dodałem to samo w tfoot żeby ładniej wygladalo*/
 
 
 /*Formularze*/
 
-#tresc tr,td {
+article tr,td {
     border: none;
     width: 33%;
     height: 33%;
 }
 
-#tresc table{
+article table{
         background-color: rgba(0, 0, 0, 0.0) !important; /*
 
 ostatni bit odpowiada za transparentność*/
@@ -459,7 +456,7 @@ div.desc {
 }
 
 @media only screen and (max-width: 500px) {
-    #tresc{
+    article{
         width: 100%;
     }
     
