@@ -16,7 +16,7 @@
     </header> 
     
 <section>
-<!--    <div id="baner"><h2> Szybki kurs HTML</h2></div>-->
+
     <div id="menu">
         <ul id="nav">
             <li><a href="index.html">Podstawy</a> </li>
@@ -50,6 +50,7 @@
 
 <div id="pasek">
 <!-- W pasku zawarty jest kolejny blok klasy box:-->
+
 <div class="box">
 <h3>Walidatory:</h3>
 <ul>
@@ -57,6 +58,7 @@
 <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
 </ul>
 </div>
+
 <!-- Kolejny blok klasy box:-->
 <div class="box">
 <h3>Kursy:</h3>
@@ -66,9 +68,8 @@
 <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
 <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
 </ul>
-
-
 </div>
+
 </div>
     
     
@@ -83,13 +84,14 @@
 
     
 <table>
+    <tbody>
     <tr>
         <th>Nazwisko:</th>
-        <th><input type="text" name="nazwisko"/> <br /></th>
+        <th><input type="text" name="nazwisko" autocomplete="on" placeholder="Surname" required /> <br /></th>
      </tr> 
     <tr>
         <th>Wiek:</th>
-        <th><input type="text" name="wiek"/> <br /></th>
+        <th><input type="number" name="wiek" autocomplete="on" max="120" placeholder="Age" /> <br /></th>
      </tr>   
     <tr>
         <th>Państwo:</th>
@@ -106,9 +108,13 @@
      </tr>   
     <tr>
         <th>Adres e-mail:</th>
-        <th><input type="text" name="email"/> <br /></th>
-     </tr>              
+        <th><input type="text" name="email" autocomplete="on" placeholder="youremail@email.com" 
+                    pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
+                   required/> <br /></th>
         
+<!--        I tu taka mala dygresja bo z tego co pisza email i walidacje powinno sie przeprowadzic po stronie serwera-->
+     </tr>              
+        </tbody>
 </table>
  
 
@@ -121,7 +127,7 @@
 
 <p>Sposób zapłaty:</p>
 
-<input type="radio" id="ec" name="payment_method" value="eurocard">
+<input type="radio" id="ec" name="payment_method" value="eurocard" required>
   <label for="ec">eurocard</label> 
   <input type="radio" id="visa" name="payment_method" value="visa">
   <label for="visa">visa</label> 

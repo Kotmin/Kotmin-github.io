@@ -83,8 +83,38 @@ font-size: 8vh;
 color: #000040;
 }
 
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+  border-radius: 25px;
+  
+}
+
+aside img{
+    background-size: cover;
+  width: 80%;
+  margin: auto;
+  display: block;
+  border-radius: 25px;
+}
+aside p{
+    padding-right:  10%;
+    width: 100%;
+    text-align: right; 
+}
 
 
+p {
+/*    background: appworkspace;*/
+    padding-right:  10%;
+    width: 100%;
+    text-align: left;
+    
+}
 
 
 #menu {
@@ -388,12 +418,6 @@ ostatni bit odpowiada za transparentność*/
     padding-right: 2%;
     
         
-    
-}
-p {
-    background: appworkspace;
-    padding-left: 1%;
-    width: 100%;
     
 }
 
