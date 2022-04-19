@@ -61,24 +61,31 @@ min-height: 100vh;
 
 }
 
-
-h1, h2{
-
-
-text-align:center;
-font-size: 10vh;
-}
-
-
-#baner
-{
-background: #000040;
+h1 {
+    
+background: #000040; 
 color: #8080ff;
 text-align:center; 
-font-size: 3vh;
+font-size: 10vh;
 margin-bottom: 2vh;
+padding-bottom: 2%;
     
 }
+
+/*h1, h2{*/
+
+
+h2{
+
+text-align:center;
+padding-bottom: 2%;
+font-size: 8vh;
+color: #000040;
+}
+
+
+
+
 
 #menu {
 
@@ -123,6 +130,10 @@ background:#0000d5;
 color:#ffffff;
 text-decoration:none;
 }
+#menu ul{
+    list-style-type:disc;
+}
+
 
 
 #kontener {
@@ -131,6 +142,14 @@ text-decoration:none;
     display: block;
     margin-left: auto;
     margin-right: auto
+}
+.container
+{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    
 }
 
 
@@ -150,10 +169,19 @@ float:right;
 width:20%;
 padding:1%;
 }
+
+/*
+A tu zaczniemy
+*/
 #nav {
 text-align: left;
 overflow: hidden;
 font-family: calibri, tahoma;
+
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 ul#nav li {
 border: 1px solid #d5d5d5;
@@ -192,13 +220,26 @@ display: block;
 
 width: 177px;
 }
-/*
+
 #nav {position: relative;
-  display: inline-block;}*/
+  display: inline-block;}/*
 
 
-#stopka{
-clear:both;
+
+
+Tu skończymy przeklejanie #nav*/
+
+/*Nowa wersja nav*/
+
+
+
+
+/*Koniec nowej wersj nav*/
+
+
+
+footer{
+   clear:both;
 width:100%;
 padding:5px 0 5px 0;
 text-align:center;
@@ -206,10 +247,10 @@ background: #000040;
 color: #8080ff;
 font-size: 4vh;
 margin-bottom: 1vh;
-    
+     
 }
 
-#menu2 {
+/*#menu2 {
 text-align: left;
 overflow: hidden;
 font-family: calibri, tahoma;
@@ -250,16 +291,10 @@ padding: 0;
 display: block;
 width: 177px;
 text-align: center;
-}
+}*/
 
 
 
-
-#menu ul
-{
-    list-style-type:disc;
-    
-}
 
 
 .box ul
@@ -372,7 +407,7 @@ IDs are slower*/
 
 #baner2
 /*{background: activecaption;*/
-margin-bottom:-2%;
+/*margin-bottom:-2%;*/
 }
 
 /*
@@ -440,7 +475,6 @@ div.desc {
   }
 }
 
-/*StacOVF*/
 
 .container {
     display: flex;
