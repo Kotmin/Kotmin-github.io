@@ -6,20 +6,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--że tu? viewport odpowiada za zoomowanie na ekranach dotykowych, chociaż znając życie ctrl + --> 
-<!--<link href="CSS/style.css" rel="stylesheet" type="text/css"/>-->
-<!--<link href="CSS/style_1.css" rel="stylesheet" type="text/css"/>-->
+
 <link href="CSS/style_backup_css.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+    <header>
+        <h1> Szybki kurs HTML</h1>
+    </header> 
+<!--    <div id="baner" class="box">-->
+    
 <!--    <header>
         
         <nav>
             <a href="index.html"> Strona główna </a>
         </nav>
     </header>-->
-<div id="kontener">
-    <div id="baner"><h2> Szybki kurs HTML</h2></div>
-    <div id="menu">
+<div class="container">
+<!--<div id="kontener">-->
+    <div id="baner" class="box"><h2> Szybki kurs HTML</h2></div>
+    <div id="menu" class="box">
         <ul id="nav">
             <li><a href="index.html">Podstawy</a> </li>
             <li><a href="tabele.html">Tabele</a></li>
@@ -36,42 +41,8 @@
         
         
     </div>
-<!--<div id="baner3"></div>-->
 
-<!--Tutaj się musimy mocno zastanowić czy chcemy to robić tabelą-->
-
-
-<!--<div id="tresc" style="overflow-x:auto;">
-    <h3> Galeria zdjęć</h3>
-    <table>
-        <caption>Galeria zdjęć</caption>
-        
-   <tr>
-       <td> <a href="src/zdjecia/obraz1.JPG"> <img src="src/miniaturki/obraz1.JPG" alt=""/> </a> </td>
-   
-    <td> <a href="src/zdjecia/obraz3.JPG"> <img src="src/miniaturki/obraz2.JPG" alt=""/> </a> </td>
-    <td> <a href="src/zdjecia/obraz3.JPG"> <img src="src/miniaturki/obraz3.JPG" alt=""/> </a>  </td>
-  </tr>
-  
-    <tr>
-       <td> <a href="src/zdjecia/obraz4.JPG"> <img src="src/miniaturki/obraz4.JPG" alt=""/> </a> </td>
-   
-    <td> <a href="src/zdjecia/obraz5.JPG"> <img src="src/miniaturki/obraz5.JPG" alt=""/> </a> </td>
-    <td> <a href="src/zdjecia/obraz6.JPG"> <img src="src/miniaturki/obraz6.JPG" alt=""/> </a>  </td>
-  </tr>
-        
-     <tr>
-       <td> <a href="src/zdjecia/obraz1.JPG"> <img src="src/miniaturki/obraz7.JPG" alt=""/> </a> </td>
-   
-    <td> <a href="src/zdjecia/obraz3.JPG"> <img src="src/miniaturki/obraz8.JPG" alt=""/> </a> </td>
-    <td> <a href="src/zdjecia/obraz3.JPG"> <img src="src/miniaturki/obraz3.JPG" alt=""/> </a>  </td>
-  </tr>
-    </table>
-    
-   
-    
-</div>-->
-<div id="tresc">
+<div id="tresc" class="box">
     <div style="padding-left:20px">
 <h2> Galeria zdjęć</h2>
     </div>
@@ -177,9 +148,12 @@
 
 </div>
 </div>
-<div id="stopka"> &copy;BP </div>
+
 
 </div>
+
+
+<div id="stopka"> &copy;BP </div>
 </body>
     
     
