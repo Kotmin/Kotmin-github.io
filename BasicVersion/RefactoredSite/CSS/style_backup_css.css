@@ -61,24 +61,61 @@ min-height: 100vh;
 
 }
 
-
-h1, h2{
-
-
-text-align:center;
-font-size: 10vh;
-}
-
-
-#baner
-{
-background: #000040;
+h1 {
+    
+background: #000040; 
 color: #8080ff;
 text-align:center; 
-font-size: 3vh;
+font-size: 10vh;
 margin-bottom: 2vh;
+padding-bottom: 2%;
     
 }
+
+/*h1, h2{*/
+
+
+h2{
+
+text-align:center;
+padding-bottom: 2%;
+font-size: 8vh;
+color: #000040;
+}
+
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+  border-radius: 25px;
+  
+}
+
+aside img{
+    background-size: cover;
+  width: 80%;
+  margin: auto;
+  display: block;
+  border-radius: 25px;
+}
+aside p{
+    padding-right:  10%;
+    width: 100%;
+    text-align: right; 
+}
+
+
+p {
+/*    background: appworkspace;*/
+    padding-right:  10%;
+    width: 100%;
+    text-align: left;
+    
+}
+
 
 #menu {
 
@@ -123,37 +160,61 @@ background:#0000d5;
 color:#ffffff;
 text-decoration:none;
 }
+#menu ul{
+    list-style-type:disc;
+}
 
 
-#kontener {
+
+section {
     
     width: 90%;
     display: block;
     margin-left: auto;
+    margin-right: auto;
+    background: white;
+}
+.container
+{
+    width: 90%;
+    display: block;
+    margin-left: auto;
     margin-right: auto
+    
 }
 
 
 
 /*Pozycjonowanie elementów na stronie */
-#tresc {
+article {
 background: lightblue;
 float:left;
 width:75%;
 padding:1%;
+padding-bottom: 1%;
 }
-#tresc li{
+article li{
     list-style-type:disc;
 }
 #pasek {
 float:right;
-width:20%;
+width:25%;
 padding:1%;
+padding-bottom: 5%;
 }
+
+/*
+A tu zaczniemy
+*/
 #nav {
 text-align: left;
 overflow: hidden;
 font-family: calibri, tahoma;
+
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 ul#nav li {
 border: 1px solid #d5d5d5;
@@ -192,13 +253,26 @@ display: block;
 
 width: 177px;
 }
-/*
+
 #nav {position: relative;
-  display: inline-block;}*/
+  display: inline-block;}/*
 
 
-#stopka{
-clear:both;
+
+
+Tu skończymy przeklejanie #nav*/
+
+/*Nowa wersja nav*/
+
+
+
+
+/*Koniec nowej wersj nav*/
+
+
+
+footer{
+   clear:both;
 width:100%;
 padding:5px 0 5px 0;
 text-align:center;
@@ -206,10 +280,10 @@ background: #000040;
 color: #8080ff;
 font-size: 4vh;
 margin-bottom: 1vh;
-    
+     
 }
 
-#menu2 {
+/*#menu2 {
 text-align: left;
 overflow: hidden;
 font-family: calibri, tahoma;
@@ -250,16 +324,10 @@ padding: 0;
 display: block;
 width: 177px;
 text-align: center;
-}
+}*/
 
 
 
-
-#menu ul
-{
-    list-style-type:disc;
-    
-}
 
 
 .box ul
@@ -281,7 +349,8 @@ h3 {
 }
 
 
-/*Tabele*/
+/*Tabele - wydaje sie ze to juz jest poprawnie napisane- validated*/
+
 
 
 
@@ -302,7 +371,7 @@ WARNING WALIDATORA
 Using width with border can sometimes make elements larger than you expect.
 */
 
-/*ustawienie tytułu tabeli:*/
+/*ustawienie rozmiaru tytułu tabeli:*/
 caption {
 font-size:150%
 }
@@ -317,35 +386,28 @@ font-size:120%
 td, th { 
 border: solid #000040; 
 }
-/*1pt*/
-/*Don't use width or height when using padding or border.*/
-/*formatowanie elementu <a> zawartego w elemencie <tfoot>: */
+
+
 tfoot a {
 color:#ffffff;
 }
-/* definicja klasy o nazwie parzysty - mozna
-ją zastosować dla dowolnego znacznika w dokumencie html
-podając atrybut class="parzysty" :*/
-.parzysty {
-background:#ffffff;
-} 
-/*
-Dostaliśmy ostrzeżenie że takie selektory mogą być wolne*/
-/*
-Element (*.parzysty) is overqualified, just use .parzysty without element name.parzysty
 
-Don't use classes or IDs with elements (a.foo or a#foo).*/
+tbody tr:nth-child(even){
+    background:#ffffff;
+}
+
+/*Dodałem to samo w tfoot żeby ładniej wygladalo*/
 
 
 /*Formularze*/
 
-#tresc tr,td {
+article tr,td {
     border: none;
     width: 33%;
     height: 33%;
 }
 
-#tresc table{
+article table{
         background-color: rgba(0, 0, 0, 0.0) !important; /*
 
 ostatni bit odpowiada za transparentność*/
@@ -358,12 +420,6 @@ ostatni bit odpowiada za transparentność*/
         
     
 }
-p {
-    background: appworkspace;
-    padding-left: 1%;
-    width: 100%;
-    
-}
 
 /*Walidator sugesstions?:
 Using width with padding-left can sometimes make elements larger than you expect.
@@ -372,7 +428,7 @@ IDs are slower*/
 
 #baner2
 /*{background: activecaption;*/
-margin-bottom:-2%;
+/*margin-bottom:-2%;*/
 }
 
 /*
@@ -424,7 +480,7 @@ div.desc {
 }
 
 @media only screen and (max-width: 500px) {
-    #tresc{
+    article{
         width: 100%;
     }
     
@@ -440,7 +496,6 @@ div.desc {
   }
 }
 
-/*StacOVF*/
 
 .container {
     display: flex;
