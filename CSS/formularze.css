@@ -1,0 +1,26 @@
+
+
+
+#formularz
+{   background: azure;
+    padding-right: 2%;
+    
+        
+    
+}
+p {
+    background: appworkspace;
+    padding-left: 1%;
+    width: 100%;
+    
+}
+
+/*Walidator sugesstions?:
+Using width with padding-left can sometimes make elements larger than you expect.
+IDs are slower*/
+
+
+#baner2
+{background: activecaption;
+margin-bottom:-2%;
+}
